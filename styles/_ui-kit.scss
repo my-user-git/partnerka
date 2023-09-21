@@ -15,12 +15,32 @@
             color: $light-text;
             background-color: $light-bg;
         }
+
+        &:focus {
+            color: $light-text;
+            background-color: $light-bg;
+        }
+
+        &:activate {
+            color: $light-text;
+            background-color: $light-bg;
+        }
     }
 
     &__tel {
         transition: background-color ease-in-out .3s, color ease-in-out .3s;
 
         &:hover {
+            color: $light-text;
+            background-color: $light-bg;
+        }
+
+        &:focus {
+            color: $light-text;
+            background-color: $light-bg;
+        }
+
+        &:activate {
             color: $light-text;
             background-color: $light-bg;
         }
@@ -32,7 +52,16 @@
         &:hover {
             color: $light-text;
             background-color: $light-bg;
+        }
 
+        &:focus {
+            color: $light-text;
+            background-color: $light-bg;
+        }
+
+        &:activate {
+            color: $light-text;
+            background-color: $light-bg;
         }
     }
 }
@@ -54,12 +83,26 @@
                 }
             }
 
+            &:focus {
+                background-color: $yellow33;
+
+                & .section-hero__card-arrow {
+                    color: $text-main;
+                }
+            }
+
+            &:activate {
+                background-color: $yellow33;
+
+                & .section-hero__card-arrow {
+                    color: $text-main;
+                }
+            }
         }
 
         &-arrow {
             transition: color ease-in-out .3s;
         }
-
     }
 
     &__service {
@@ -81,12 +124,44 @@
                 color: $light-text;
             }
         }
+
+        &:focus {
+            background-color: $light-bg;
+
+            & .section-hero__service-icon {
+                color: $yellow33;
+            }
+
+            & .section-hero__h3 {
+                color: $light-text;
+            }
+        }
+
+        &:activate {
+            background-color: $light-bg;
+
+            & .section-hero__service-icon {
+                color: $yellow33;
+            }
+
+            & .section-hero__h3 {
+                color: $light-text;
+            }
+        }
     }
 
     &__all {
         transition: color ease-in-out .3s;
 
         &:hover {
+            color: $light-text;
+        }
+
+        &:focus {
+            color: $light-text;
+        }
+
+        &:activate {
             color: $light-text;
         }
     }
@@ -101,6 +176,14 @@
         &:hover {
             color: $light-text;
         }
+
+        &:focus {
+            color: $light-text;
+        }
+
+        &:activate {
+            color: $light-text;
+        }
     }
 }
 
@@ -109,6 +192,16 @@
         transition: color ease-in-out .3s;
 
         &:hover {
+            color: $light-text;
+        }
+
+
+        &:focus {
+            color: $light-text;
+        }
+
+
+        &:activate {
             color: $light-text;
         }
     }

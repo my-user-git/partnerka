@@ -867,6 +867,14 @@ header {
   color: #CC9900;
   background-color: rgba(255, 204, 51, 0.1);
 }
+.header-content__link:focus {
+  color: #CC9900;
+  background-color: rgba(255, 204, 51, 0.1);
+}
+.header-content__link:activate {
+  color: #CC9900;
+  background-color: rgba(255, 204, 51, 0.1);
+}
 .header-content__tel {
   transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
 }
@@ -874,10 +882,26 @@ header {
   color: #CC9900;
   background-color: rgba(255, 204, 51, 0.1);
 }
+.header-content__tel:focus {
+  color: #CC9900;
+  background-color: rgba(255, 204, 51, 0.1);
+}
+.header-content__tel:activate {
+  color: #CC9900;
+  background-color: rgba(255, 204, 51, 0.1);
+}
 .header-content__button {
   transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
 }
 .header-content__button:hover {
+  color: #CC9900;
+  background-color: rgba(255, 204, 51, 0.1);
+}
+.header-content__button:focus {
+  color: #CC9900;
+  background-color: rgba(255, 204, 51, 0.1);
+}
+.header-content__button:activate {
   color: #CC9900;
   background-color: rgba(255, 204, 51, 0.1);
 }
@@ -891,6 +915,18 @@ header {
   background-color: #FFCC33;
 }
 .section-hero__card-link:hover .section-hero__card-arrow {
+  color: rgba(0, 0, 0, 0.8);
+}
+.section-hero__card-link:focus {
+  background-color: #FFCC33;
+}
+.section-hero__card-link:focus .section-hero__card-arrow {
+  color: rgba(0, 0, 0, 0.8);
+}
+.section-hero__card-link:activate {
+  background-color: #FFCC33;
+}
+.section-hero__card-link:activate .section-hero__card-arrow {
   color: rgba(0, 0, 0, 0.8);
 }
 .section-hero__card-arrow {
@@ -912,10 +948,34 @@ header {
 .section-hero__service:hover .section-hero__h3 {
   color: #CC9900;
 }
+.section-hero__service:focus {
+  background-color: rgba(255, 204, 51, 0.1);
+}
+.section-hero__service:focus .section-hero__service-icon {
+  color: #FFCC33;
+}
+.section-hero__service:focus .section-hero__h3 {
+  color: #CC9900;
+}
+.section-hero__service:activate {
+  background-color: rgba(255, 204, 51, 0.1);
+}
+.section-hero__service:activate .section-hero__service-icon {
+  color: #FFCC33;
+}
+.section-hero__service:activate .section-hero__h3 {
+  color: #CC9900;
+}
 .section-hero__all {
   transition: color ease-in-out 0.3s;
 }
 .section-hero__all:hover {
+  color: #CC9900;
+}
+.section-hero__all:focus {
+  color: #CC9900;
+}
+.section-hero__all:activate {
   color: #CC9900;
 }
 
@@ -926,11 +986,23 @@ header {
 .aside-content__link:hover {
   color: #CC9900;
 }
+.aside-content__link:focus {
+  color: #CC9900;
+}
+.aside-content__link:activate {
+  color: #CC9900;
+}
 
 .footer-content__link {
   transition: color ease-in-out 0.3s;
 }
 .footer-content__link:hover {
+  color: #CC9900;
+}
+.footer-content__link:focus {
+  color: #CC9900;
+}
+.footer-content__link:activate {
   color: #CC9900;
 }
 
