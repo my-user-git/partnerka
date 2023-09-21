@@ -1,0 +1,115 @@
+/* header */
+
+.header-content {
+    &__logo {
+        transition: transform ease-in-out .3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__link {
+
+        &:hover {
+            color: $light-text;
+            background-color: $light-bg;
+        }
+    }
+
+    &__tel {
+        transition: background-color ease-in-out .3s, color ease-in-out .3s;
+
+        &:hover {
+            color: $light-text;
+            background-color: $light-bg;
+        }
+    }
+
+    &__button {
+        transition: background-color ease-in-out .3s, color ease-in-out .3s;
+
+        &:hover {
+            color: $light-text;
+            background-color: $light-bg;
+
+        }
+    }
+}
+
+
+/* section-hero */
+
+.section-hero {
+    &__card {
+        &-link {
+            cursor: pointer;
+            transition: background-color ease-in-out .3s;
+
+            &:hover {
+                background-color: $yellow33;
+
+                & .section-hero__card-arrow {
+                    color: $text-main;
+                }
+            }
+
+        }
+
+        &-arrow {
+            transition: color ease-in-out .3s;
+        }
+
+    }
+
+    &__service {
+        cursor: pointer;
+        transition: background-color ease-in-out .3s;
+
+        &-icon {
+            transition: color ease-in-out .3s;
+        }
+
+        &:hover {
+            background-color: $light-bg;
+
+            & .section-hero__service-icon {
+                color: $yellow33;
+            }
+
+            & .section-hero__h3 {
+                color: $light-text;
+            }
+        }
+    }
+
+    &__all {
+        transition: color ease-in-out .3s;
+
+        &:hover {
+            color: $light-text;
+        }
+    }
+}
+
+/* about */
+
+.aside-content {
+    &__link {
+        transition: color ease-in-out .3s;
+
+        &:hover {
+            color: $light-text;
+        }
+    }
+}
+
+.footer-content {
+    &__link {
+        transition: color ease-in-out .3s;
+
+        &:hover {
+            color: $light-text;
+        }
+    }
+}

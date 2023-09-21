@@ -1,0 +1,322 @@
+@media (max-width: 1199px) {
+    .header-content {
+        height: 120px;
+        grid-template-areas:
+            "logo . tel button"
+            "nav nav nav nav";
+        grid-template-columns: min-content 1fr max-content max-content;
+        grid-template-rows: auto;
+        row-gap: 8px;
+
+        &_logo {
+            grid-area: logo;
+        }
+
+        &__tel {
+            grid-area: tel;
+        }
+
+        &__button {
+            grid-area: button;
+            align-self: flex-end;
+        }
+
+        &__nav {
+            grid-area: nav;
+            width: 100%;
+        }
+
+        &__list {
+            width: 100%;
+        }
+
+        &__item {
+            text-align: center;
+        }
+    }
+
+    .section-hero {
+
+        &__services {
+            row-gap: 14px;
+            padding: 4px 4px 14px 4px;
+            background-color: $white;
+            border-radius: 24px;
+            box-shadow: 0px 16px 64px 0px rgb(51, 102, 153, .08);
+        }
+
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item:first-child {
+            padding: 0;
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        &__item:last-child {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &__item {
+            position: relative;
+
+            &-item {
+                &:last-child {
+                    display: none;
+                }
+
+                &:not(:nth-child(4)):not(:nth-child(8)) .section-hero__service {
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: 15px;
+                        right: -3px;
+                        bottom: 16px;
+                        border-right: 1px solid $border-primary;
+                    }
+                }
+
+            }
+
+
+        }
+
+        &__service {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                bottom: 1px;
+                left: 0;
+                border-bottom: 1px solid $border-primary;
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    /* footer */
+
+    .footer-content {
+        &__h3 {
+            font-family: $JostMedium, $fontStandart;
+            font-size: 16px;
+            line-height: 1.25;
+            font-weight: 500;
+            color: $text-main;
+            letter-spacing: .4px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        margin-bottom: 61px;
+    }
+
+    .header-content {
+        height: 120px;
+        padding-bottom: 8px;
+        row-gap: 0;
+
+        &__nav {
+            width: 100%;
+        }
+
+        &__item {
+            display: flex;
+            justify-self: center;
+            align-self: flex-start;
+        }
+
+        &__button {
+            align-self: inherit;
+        }
+    }
+
+
+    /* section-hero */
+    .section-hero {
+
+        &__card {
+            &-link {
+                padding: 24px 24px 23px 25px
+            }
+        }
+
+        &__services {
+            row-gap: 18px;
+        }
+
+        &__service {
+            padding: 13px 12px 16px 9px;
+
+            &:not(:nth-child(4)):not(:nth-child(8))::before {
+                top: 11px;
+                right: -2px;
+                bottom: 11px;
+            }
+        }
+
+        &__item:last-child {
+            margin-left: 11px;
+        }
+    }
+}
+
+
+/* mobile */
+
+@media (max-width: 680px) {
+
+    .container {
+        padding: 0 16px;
+    }
+
+    /* header */
+
+    header {
+        margin-bottom: 46px;
+    }
+
+    .header-content {
+        position: relative;
+        grid-template-areas:
+            "burger logo . button";
+        grid-template-columns: min-content max-content 1fr max-content;
+        grid-template-rows: 1fr;
+        height: 64px;
+
+        &__logo {
+            width: 100px;
+            height: 32px;
+            margin-top: -13px;
+            margin-right: 0;
+            margin-left: 8px;
+        }
+
+        &__burger {
+            grid-area: burger;
+            display: block;
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+
+        &__x {
+            margin-top: -8px;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__tel {
+            display: none;
+        }
+
+        &__button {
+            margin-top: -3px;
+            margin-right: 0;
+            padding: 10px 16px 10px 16px;
+            border-radius: 8px;
+        }
+
+        &__active {
+            display: flex;
+
+            & .header-content__list {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                top: 0;
+                right: 8px;
+                left: 8px;
+                padding: 61px 20px 10px 4px;
+                background-color: $blur-secondaryFA;
+                backdrop-filter: blur(50px);
+                box-shadow: 0px 16px 64px 0px rgb(51, 102, 153, .08);
+                z-index: 3;
+            }
+
+            & .header-content__link {
+                padding-bottom: 14px;
+            }
+        }
+    }
+
+
+    /* section-hero */
+
+    .section-hero {
+        &__h1 {
+            margin-bottom: 48px;
+            font-size: 40px;
+            line-height: 1;
+            letter-spacing: .4px;
+        }
+
+        &__h2 {
+            font-size: 24px;
+            line-height: 1.25;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content;
+            row-gap: 16px;
+            margin-bottom: 48px;
+        }
+
+        &__card {
+            &-link {
+                grid-template-rows: min-content 1fr;
+                row-gap: 17px;
+                padding: 25px 24px 22px 24px;
+            }
+
+            &-bg {
+                top: 0;
+                right: 0;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__desc {
+            align-self: flex-start;
+        }
+
+        &__item-item {
+            &:nth-child(even) .section-hero__service {
+                &::before {
+                    border-right: none !important;
+                }
+            }
+        }
+    }
+
+    /* footer */
+
+    .footer-content {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 32px;
+        }
+    }
+
+}
